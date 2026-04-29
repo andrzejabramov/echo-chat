@@ -1,0 +1,57 @@
+<!-- src/index.html -->
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; 
+               script-src 'self'; 
+               style-src 'self' 'unsafe-inline'; 
+               connect-src 'self' wss://echo.websocket.events wss://ws.postman-echo.com raw.githubusercontent.com;"
+    />
+    <title>🔊 Echo Chat</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1>🔊 Echo Chat</h1>
+        <span id="connectionStatus" class="status status--disconnected"
+          >Отключено</span
+        >
+      </header>
+
+      <main id="chatWindow" class="chat-window" aria-live="polite"></main>
+
+      <footer class="chat-input">
+        <input
+          type="text"
+          id="messageInput"
+          class="input-field"
+          placeholder="Введите сообщение..."
+          autocomplete="off"
+          aria-label="Текст сообщения"
+        />
+        <button
+          id="sendBtn"
+          class="btn btn--primary"
+          aria-label="Отправить сообщение"
+        >
+          Отправить
+        </button>
+        <button
+          id="geoBtn"
+          class="btn btn--secondary"
+          aria-label="Отправить геолокацию"
+        >
+          📍 Геолокация
+        </button>
+      </footer>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

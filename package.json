@@ -1,0 +1,23 @@
+{
+  "name": "echo-chat",
+  "version": "1.0.0",
+  "description": "WebSocket echo chat with geolocation support",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8080 --directory src",
+    "start:win": "python -m http.server 8080 --directory src",
+    "lint": "eslint src/**/*.js",
+    "format": "prettier --write src/**/*.{js,css,html}"
+  },
+  "keywords": [
+    "websocket",
+    "chat",
+    "geolocation"
+  ],
+  "author": "Andrej Abramov",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.2.0"
+  }
+}
