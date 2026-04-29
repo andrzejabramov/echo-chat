@@ -8,8 +8,6 @@
 
 Проект построен по модульному принципу. Каждый модуль отвечает за конкретную зону ответственности:
 
-```
-
 src/
 ├── index.html # Точка входа, семантическая разметка
 ├── css/styles.css # Стилизация (CSS Variables, Flexbox, адаптивность)
@@ -23,8 +21,6 @@ src/
 └── utils/
 ├── dom.js # Хелперы для безопасной работы с DOM
 └── url.js # Валидация координат, генерация OSM-ссылок
-
-```
 
 ## 3. Технологический стек
 
@@ -115,8 +111,8 @@ python3 -m http.server 8000 --directory src
 
 ## 10. Скрины работы сервиса:
 
-[chat.png](img/chat.png)
-[geo.png](img/geo.png)
+[chat.png](img/chat.png)  
+[geo.png](img/geo.png)  
 [answer.png](img/answer.png)
 
 ---
