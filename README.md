@@ -111,6 +111,12 @@ python3 -m http.server 8000 --directory src
 | Кнопка «Геолокация» → ссылка на OSM   | ✅          |
 | Эхо от геолокации не выводится        | ✅          |
 
+## 10. Скрины работы сервиса:
+
+[chat.png](img/chat.png)
+[geo.png](img/geo.png)
+[answer.png](img/answer.png)
+
 ---
 
 📦 **Репозиторий:** https://github.com/andrzejabramov/echo-chat  
